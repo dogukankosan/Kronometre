@@ -79,7 +79,7 @@ namespace FormStudent
                         saat = default;
                 }
             }
-            lbl_Krotext.Text = string.Concat(saat, ":", dakika, ":", saniye);
+            lbl_Krotext.Text = string.Concat(saat.ToString().PadLeft(2,'0'), ":", dakika.ToString().PadLeft(2, '0'), ":", saniye.ToString().PadLeft(2, '0'));
         }
     }
 }
